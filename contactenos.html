@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Contáctenos</title>
+    <style>
+        /* Estilos pueden ser similares a los del index.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cubo.png" alt="Logo" style="width: 5%; height: auto;">
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="contactenos.html">Contáctenos</a>
+        </nav>
+        <script>
+            const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            const today = new Date();
+            const dayOfWeek = daysOfWeek[today.getDay()];
+            document.write(dayOfWeek);
+        </script>
+    </header>
+
+    <main>
+        <img src="portada.jpg" alt="Imagen de portada" style="width: 100%; height: 300px;">
+
+        <section id="contactenos">
+            <h2>Contáctenos</h2>
+
+            <p>Ubicación: Manhattan New York EE.UU.</p>
+            <p>Correo Electrónico: info@TechJM.com</p>
+            <p>Teléfono: +123 456 789</p>
+
+            <!-- Mapa de Google -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193458.98663092215!2d-74.0961657!3d40.7444995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spa!4v1704327662455!5m2!1ses-419!2spa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Formulario de contacto -->
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="button" onclick="enviarFormulario()">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        (Jeff Mardis) 2016. Sitio Web con los derechos reservados.
+    </footer>
+
+    <script>
+        // Función para simular el envío del formulario y mostrar los datos en un alert estructurado
+        function enviarFormulario() {
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const alertMessage = `
+                <table>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td>${nombre}</td>
+                    </tr>
+                    <tr>
+                        <td>Apellido:</td>
+                        <td>${apellido}</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono:</td>
+                        <td>${telefono}</td>
+                    </tr>
+                    <tr>
+                        <td>Correo Electrónico:</td>
+                        <td>${email}</td>
+                    </tr>
+                    <tr>
+                        <td>Mensaje:</td>
+                        <td>${mensaje}</td>
+                    </tr>
+                </table>
+            `;
+
+            alert(alertMessage);
+        }
+    </script>
+    <!-- Agregar el script de Google Maps API para tu ubicación específica -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=inicializarMapa">
+    </script>
+</body>
+</html>

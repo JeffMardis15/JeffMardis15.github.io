@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cubo.png" alt="Logo" style="width: 5%; height: auto;">
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="contactenos.html">Contáctenos</a>
+        </nav>
+        <script>
+            // JavaScript para mostrar el día de la semana
+            const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            const today = new Date();
+            const dayOfWeek = daysOfWeek[today.getDay()];
+            document.write(dayOfWeek);
+        </script>
+    </header>
+
+    <main>
+        <img src="portada.jpg" alt="Imagen de portada" style="width: 100%; height: 300px;">
+
+        <section id="quienes-somos">
+            <h2>Quiénes Somos</h2>
+             <h3>Descripción</h3>
+                <p>TechJM es una empresa líder en el sector de tecnologías de la información, dedicada a proporcionar soluciones innovadoras y servicios de vanguardia. Nos especializamos en el desarrollo de software, consultoría tecnológica y soluciones personalizadas para satisfacer las necesidades específicas de nuestros clientes.<p>
+                
+                <h3>Valores:</h3>
+                
+                <p>Innovación: Nos esforzamos por estar a la vanguardia de la tecnología, adoptando nuevas ideas y enfoques para proporcionar soluciones creativas.</p>
+
+                <p>Integridad: Operamos con transparencia y honestidad en todas nuestras interacciones, construyendo relaciones sólidas basadas en la confianza mutua.</p>
+                
+                <p>Compromiso: Estamos comprometidos con la excelencia en todo lo que hacemos, desde el desarrollo de productos hasta el servicio al cliente.</p>
+                
+                <p>Colaboración: Fomentamos un entorno colaborativo donde el trabajo en equipo y la cooperación son fundamentales para el éxito.</p>
+
+                 <h3>Misión:</h3>
+                
+                <p>Nuestra misión es impulsar la transformación digital al ofrecer soluciones tecnológicas que potencien el crecimiento y la eficiencia de nuestros clientes. Trabajamos para ser socios estratégicos, brindando productos y servicios que superen las expectativas y generen un impacto positivo en la sociedad.</p>
+                
+                <h3>Visión:</h3>
+                <p>Ser reconocidos como líderes en la innovación tecnológica, siendo la primera elección para empresas que buscan soluciones a medida. Aspiramos a ser un referente en la industria, contribuyendo al progreso tecnológico y mejorando la calidad de vida a través de nuestras iniciativas.</p>
+            
+                <h2>Gerente</h2>
+                <img src="gerente.jpg" alt="Gerente de la empresa" style="width: 10%; height: auto;">
+                <p> Jeff Mardis</p>
+        </section>
+    </main>
+
+    <footer>
+        (Jeff Mardis) 2016. Sitio Web con los derechos reservados.
+    </footer>
+</body>
+</html>

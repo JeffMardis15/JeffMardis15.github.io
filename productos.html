@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .product {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: hidden; 
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cubo.png" alt="Logo" style="width: 5%; height: auto;">
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="contactenos.html">Contáctenos</a>
+        </nav>
+        <script>
+            // JavaScript para mostrar el día de la semana
+            const daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            const today = new Date();
+            const dayOfWeek = daysOfWeek[today.getDay()];
+            document.write(dayOfWeek);
+        </script>
+    </header>
+
+    <main>
+        <img src="portada.jpg" alt="Imagen de portada" style="width: 100%; height: 300px;" >
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="ps5.jpeg" alt="Producto 1" style="width: 10%; height: auto;">
+                <h3>Playstation 5</h3>
+                <p>La PlayStation 5, la última incorporación a la icónica línea de consolas de videojuegos de Sony, redefine la experiencia de juego con un rendimiento excepcional, gráficos impresionantes y una gama de características innovadoras. Diseñada para los verdaderos amantes de los videojuegos, la PS5 combina potencia, velocidad y una inmersión sin igual para llevar el entretenimiento interactivo a nuevas alturas.</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="iPhone 15.jpg" alt="Producto 2" style="width: 10%; height: auto;">
+                <h3>iPhone 15</h3>
+                <p>Presentamos el iPhone 15, el último hito en la evolución de la icónica línea de smartphones de Apple. Diseñado para llevar la experiencia del usuario a nuevas alturas, el iPhone 15 fusiona tecnología avanzada con un elegante diseño para ofrecer un dispositivo que va más allá de las expectativas.</p>
+            </div>
+
+               <!-- Producto 3 -->
+               <div class="product">
+                <img src="Apple Watch Series 8.jpg" alt="Producto 3" style="width: 10%; height: auto;">
+                <h3>Apple Watch Series 8</h3>
+                <p>Presentamos el Apple Watch Series 8, la última joya de la innovación tecnológica de Apple. Diseñado para complementar tu estilo de vida activo y conectar de manera más profunda con tu bienestar, el Series 8 redefine las posibilidades de un reloj inteligente.</p>
+            </div>
+
+             <!-- Producto 4 -->
+             <div class="product">
+                <img src="earbuds.jpg" alt="Producto 4" style="width: 10%; height: auto;">
+                <h3>Galaxy Buds</h3>
+                <p>Los Samsung Galaxy Buds+ son auriculares inalámbricos diseñados para ofrecer una experiencia de audio premium y funcionalidades avanzadas, proporcionan una calidad de sonido mejorada con altavoces dinámicos de dos vías y tres micrófonos para una experiencia auditiva más inmersiva y clara.</p>
+            </div>
+
+             <!-- Producto 5 -->
+             <div class="product">
+                <img src="samsung s23.jpg" alt="Producto 5" style="width: 10%; height: auto;">
+                <h3>Samsung Galaxy S23</h3>
+                <p>El Samsung Galaxy S23 sigue la estela del gama alta compacto del año pasado pero incorporando en su interior el Snapdragon 8 Gen 2, con un nuevo diseño, más batería, algunos cambios en sus cámaras y otras novedades.</p>
+            </div>
+
+             <!-- Producto 6 -->
+             <div class="product">
+                <img src="Skull Candy.jpg" alt="Producto 6" style="width: 10%; height: auto;">
+                <h3>Skull Candy Dime True</h3>
+                <p>Los Skullcandy Dime True son más que unos auriculares inalámbricos; son la fusión perfecta de estilo, comodidad y calidad de audio en un diseño compacto. Diseñados para aquellos que buscan una experiencia auditiva sin restricciones, los Dime True de Skullcandy ofrecen un rendimiento impresionante en un paquete pequeño.</p>
+            </div>
+
+             <!-- Producto 7 -->
+             <div class="product">
+                <img src="Xbox Series X.jpg" alt="Producto 7" style="width: 10%; height: auto;">
+                <h3>Xbox Series X</h3>
+                <p>La Xbox Series X es la consola de videojuegos de próxima generación desarrollada por Microsoft. Lanzada en noviembre de 2020, representa un salto significativo en términos de rendimiento y capacidad en comparación con las generaciones anteriores de consolas Xbox. </p>
+            </div>
+
+             <!-- Producto 8 -->
+             <div class="product">
+                <img src="Predator Helios 300.jpg" alt="Producto 8" style="width: 10%; height: auto;">
+                <h3>Predator Helios 300</h3>
+                <p>el Predator Helios 300 es una serie de laptops para juegos fabricadas por Acer, conocida por ofrecer un rendimiento sólido a un precio relativamente asequible en comparación con otras laptops para juegos de gama alta. </p>
+            </div>
+
+             <!-- Producto 9 -->
+             <div class="product">
+                <img src="Alienware m17.webp" alt="Producto 9" style="width: 10%; height: auto;">
+                <h3>Alienware M17</h3>
+                <p>Alienware M17 es una serie de laptops para juegos fabricadas por Alienware, una subsidiaria de Dell. Alienware es conocida por producir dispositivos de alta gama y rendimiento, especialmente diseñados para gamers y entusiastas del rendimiento.</p>
+            </div>
+
+             <!-- Producto 10 -->
+             <div class="product">
+                <img src="Galaxy Watch Active2.avif" alt="Producto 10" style="width: 10%; height: auto;">
+                <h3>Galaxy Watch Active 2</h3>
+                <p>
+                    El Samsung Galaxy Watch Active 2 es un reloj inteligente diseñado para ofrecer una amplia variedad de funciones útiles, tanto para el seguimiento de la salud como para la conectividad diaria con dispositivos móviles.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        (Jeff Mardis) 2016. Sitio Web con los derechos reservados.
+    </footer>
+</body>
+</html>
